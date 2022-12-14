@@ -11,10 +11,16 @@
 </head>
 
 <body class="studio">
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="navigation header__navigation">
                 <a href="#" class="logo header__logo"><span class="logo-web">Web</span>Studio</a>
+                <button type="button" class="header__button is-open">
+                    <svg width="40px" height="40px" aria-label="Перемикання мобільного меню">
+                        <use href="./images/icons.svg#icon-closetel" class="icon-close"></use>
+                        <use href="./images/icons.svg#icon-menutel" class="icon-menu"></use>
+                    </svg>
+                </button>
                 <ul class="menu">
                     <li class="item menu__item">
                         <a href="./index.html" class="link menu__link menu__link--current current">Студія</a>
@@ -44,15 +50,15 @@
                 </li>
             </ul>
         </div>
-    </header> -->
+    </header>
 
     <main class="studio-main">
-        <!-- <section class="hero section">
+        <section class="hero section">
             <div class="hero__container container">
                 <h1 class="hero__title">Ефективні рішення для<br /> вашого бізнесу</h1>
                 <button type="button" class="button hero__button" data-modal-open>Замовити послугу</button>
             </div>
-        </section> -->
+        </section>
         <section class="quality section">
             <div class="quality__container container">
                 <h2 class="quality__title" hidden>Якості</h2>
@@ -98,23 +104,41 @@
         </section>
         <section class="what-do section">
             <div class="what-do__container container">
-                <h2 class="what-do__title">Чим ми займаємося</h2>
+                <h2 class="what-do__title heading">Чим ми займаємося</h2>
                 <ul class="what-do__list">
                     <li class="what-do__item">
                         <div class="what-do__wrap">
-                            <img src="./images/box_1.jpg" alt="Чоловічі руки щось кодують" width="370">
+                            <img
+                            class="image-block"
+                            srcset="./images/box_1.jpg 1x, ./images/box_1@2x.jpg 2x"
+                            src="./images/box_1.jpg"
+                            alt="Чоловічі руки щось кодують"
+                            width="370"/>
+                            <!-- <img src="./images/box_1.jpg" alt="Чоловічі руки щось кодують" width="370"> -->
                             <p class="what-do__description">Десктопні додатки</p>
                         </div>
                     </li>
                     <li class="what-do__item">
                         <div class="what-do__wrap">
-                            <img src="./images/box_2.jpg" alt="Жінка тримає телефон та клацає ноутбук" width="370">
+                            <img
+                            class="image-block"
+                            srcset="./images/box_2.jpg 1x, ./images/box_2@2x.jpg 2x"
+                            src="./images/box_2.jpg"
+                            alt="Жінка тримає телефон та клацає ноутбук"
+                            width="370"/>
+                            <!-- <img src="./images/box_2.jpg" alt="Жінка тримає телефон та клацає ноутбук" width="370"> -->
                             <p class="what-do__description">Мобільні додатки</p>
                         </div>
                     </li>
                     <li class="what-do__item">
                         <div class="what-do__wrap">
-                            <img src="./images/box_3.jpg" alt="Графічний планшет у руках" width="370">
+                            <img
+                            class="image-block"
+                            srcset="./images/box_3.jpg 1x, ./images/box_3@2x.jpg 2x"
+                            src="./images/box_3.jpg"
+                            alt="Жінка тримає телефон та клацає ноутбук"
+                            width="370"/>
+                            <!-- <img src="./images/box_3.jpg" alt="Графічний планшет у руках" width="370"> -->
                             <p class="what-do__description">Дизайнерські рішення</p>
                         </div>
                     </li>
@@ -123,10 +147,26 @@
         </section>
         <section class="team section">
             <div class="team__container container">
-                <h2 class="team__title">Наша команда</h2>
+                <h2 class="team__title heading">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item igor">
-                        <img src="./images/img.jpg" alt="Ігор Дем'яненко - чоловік в окулярах та у бордовій рубашці" width="270">
+                        <div class="team-cards__thumb">
+                            <img
+                            class="team-cards__image image-block"
+                            srcset="
+                                ./images/img-1.jpg           270w,
+                                ./images/img-1-tablet.jpg    354w,
+                                ./images/img-1-mobile.jpg    450w,
+                                ./images/img-1@2x.jpg        540w,
+                                ./images/img-1-tablet@2x.jpg 708w,
+                                ./images/img-1-mobile@2x.jpg 900w
+                            "
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100%"
+                            src="./images/img-1.jpg"
+                            alt="Ігор Дем'яненко - чоловік в окулярах та у бордовій рубашці"
+                            />
+                        </div>
+                        <!-- <img src="./images/img-1.jpg" alt="Ігор Дем'яненко - чоловік в окулярах та у бордовій рубашці" width="270"> -->
                         <div class="name">
                             <h3 class="name__title">Ігор Дем'яненко</h3>
                             <p class="name__subtitle" lang="en">Product Designer</p>
@@ -163,7 +203,23 @@
                         </div>
                     </li>
                     <li class="team__item olga">
-                        <img src="./images/img-2.jpg" alt="Ольга Рєпіна - білява жінка в окулярах" width="270">
+                        <div class="team-cards__thumb">
+                            <img
+                            class="team-cards__image image-block"
+                            srcset="
+                                ./images/img-2.jpg           270w,
+                                ./images/img-2-tablet.jpg    354w,
+                                ./images/img-2-mobile.jpg    450w,
+                                ./images/img-2@2x.jpg        540w,
+                                ./images/img-2-tablet@2x.jpg 708w,
+                                ./images/img-2-mobile@2x.jpg 900w
+                            "
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100%"
+                            src="./images/img-2.jpg"
+                            alt="Ольга Рєпіна - білява жінка в окулярах"
+                            />
+                        </div>
+                        <!-- <img src="./images/img-2.jpg" alt="Ольга Рєпіна - білява жінка в окулярах" width="270"> -->
                         <div class="name">
                             <h3 class="name__title">Ольга Рєпіна</h3>
                             <p class="name__subtitle" lang="en">Frontend Developer</p>
@@ -200,7 +256,23 @@
                         </div>
                     </li>
                     <li class="team__item mykola">
-                        <img src="./images/img-3.jpg" alt="Микола Тарасов - чоловік посміхається у бік" width="270">
+                        <div class="team-cards__thumb">
+                            <img
+                            class="team-cards__image image-block"
+                            srcset="
+                                ./images/img-3.jpg           270w,
+                                ./images/img-3-tablet.jpg    354w,
+                                ./images/img-3-mobile.jpg    450w,
+                                ./images/img-3@2x.jpg        540w,
+                                ./images/img-3-tablet@2x.jpg 708w,
+                                ./images/img-3-mobile@2x.jpg 900w
+                            "
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100%"
+                            src="./images/img-3.jpg"
+                            alt="Микола Тарасов - чоловік посміхається у бік"
+                            />
+                        </div>
+                        <!-- <img src="./images/img-3.jpg" alt="Микола Тарасов - чоловік посміхається у бік" width="270"> -->
                         <div class="name">
                             <h3 class="name__title">Микола Тарасов</h3>
                             <p class="name__subtitle" lang="en">Marketing</p>
@@ -237,7 +309,23 @@
                         </div>
                     </li>
                     <li class="team__item myhailo">
-                        <img src="./images/img-4.jpg" alt="Михайло Єрмаков - чоловік в окулярах та чорній футболці" width="270">
+                        <div class="team-cards__thumb">
+                            <img
+                            class="team-cards__image image-block"
+                            srcset="
+                                ./images/img-4.jpg           270w,
+                                ./images/img-4-tablet.jpg    354w,
+                                ./images/img-4-mobile.jpg    450w,
+                                ./images/img-4@2x.jpg        540w,
+                                ./images/img-4-tablet@2x.jpg 708w,
+                                ./images/img-4-mobile@2x.jpg 900w
+                            "
+                            sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100%"
+                            src="./images/img-4.jpg"
+                            alt="Михайло Єрмаков - чоловік в окулярах та чорній футболці"
+                            />
+                        </div>
+                        <!-- <img src="./images/img-4.jpg" alt="Михайло Єрмаков - чоловік в окулярах та чорній футболці" width="270"> -->
                         <div class="name">
                             <h3 class="name__title">Михайло Єрмаков</h3>
                             <p class="name__subtitle" lang="en">UI Designer</p>
@@ -278,7 +366,7 @@
         </section>
         <section class="clients section">
             <div class="clients__container container">
-                <h2 class="clients__title">Постійні клієнти</h2>
+                <h2 class="clients__title heading">Постійні клієнти</h2>
                 <ul class="clients__list">
                     <li class="clients__item">
                         <a class="clients__link link" href="#">
@@ -327,7 +415,7 @@
         </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer__container container">
             <div class="footer__contacts contacts">
                 <a href="#" class="footer__logo logo"><span class="logo-web">Web</span>Studio</a>
@@ -398,8 +486,9 @@
                 </form>
             </div>
         </div>
-    </footer> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close button" data-modal-close>
                 <svg class="modal-order__icon" width="11" height="11">
@@ -482,6 +571,13 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script 
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous">
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
