@@ -1,483 +1,340 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css">
-</head>
-
-<body class="portfolio">
-    <header class="header">
-        <div class="container header__container">
-            <nav class="navigation">
-                <a href="/" class="logo"><span class="logo-web">Web</span>Studio</a>
-                <ul class="menu">
-                    <li class="item menu__item">
-                        <a href="./index.html" class="link menu__link">Студія</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <title>Портфоліо</title>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/main.min.css">
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="container header__container">
+                <div class="header__logo">
+                    <a href="./index.html" lang="en" class="logo__link">Web<span class="logo__header">Studio</span></a>
+                </div>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">Студія</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./portfolio.html" class="menu__link menu__link--current">Портфоліо</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Контакти</a>
+                        </li>
+                    </ul> 
+                </nav>
+                <ul class="header__contact">
+                    <li class="contact__item">
+                        <a href="mailto:info@devstudio.com" class="header__contact__link">
+                            <svg class="header__contact__icon" width="16px" height="12px">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com</a>
                     </li>
-                    <li class="item menu__item">
-                        <a href="./portfolio.html" class="link menu__link current">Портфоліо</a>
-                    </li>
-                    <li class="item menu__item">
-                        <a href="#" class="link menu__link">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="contact">
-                <li class="item item-mail">
-                    <a href="mailto:info@devstudio.com" class="link contact__link">
-                        <svg class="contact__icon" width="16px" height="12px">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="item item-telep">
-                    <a href="tel:+380961111111" class="link contact__link">
-                        <svg class="contact__icon" width="10px" height="16px">
+                    <li class="contact__item"><a href="tel:+380961111111" class="header__contact__link">
+                        <svg class="header__contact__icon" width="10px" height="16px">
                             <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-
+                        </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>
+                <button type="button" class="menu-open" data-menu-open>
+                    <svg class="menu-open__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-menutel"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="mob-menu__container">
+                    <div class="mob-menu__top">
+                        <button type="button" class="menu-close" data-menu-close>
+                            <svg class="close-icon" width="19px" height="19px">
+                                <use href="./images/icons.svg#icon-closetel"></use>
+                                </svg>
+                        </button>
+                        <ul class="mobmenu__list">
+                            <li class="mobmenu__item">
+                                <a href="./index.html" class="mobmenu__link">Студія</a>
+                            </li>
+                            <li class="mobmenu__item">
+                                <a href="./portfolio.html" class="mobmenu__link menu__link--current">Портфоліо</a>
+                            </li>
+                            <li class="mobmenu__item">
+                                <a href="" class="mobmenu__link">Контакти</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="mob-menu__bottom">
+                        <ul class="mob-contact">
+                            <li class="mob-contact__item">
+                                <a href="tel:+380961111111" class="mob-contact__link">+38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-contact__item">
+                                <a href="mailto:info@devstudio.com" class="mob-contact__link">info@devstudio.com</a>
+                            </li>
+                            
+                        </ul>
+                        <ul class="mob-network">
+                            <li class="mob-network__item">
+                                <a class="mob-network__link" href="https://www.instagram.com">
+                                    Instagram
+                            </a></li>
+                            <li class="mob-network__item">
+                                <a class="mob-network__link" href="https://twitter.com">
+                                    Twitter
+                            </a></li>
+                            <li class="mob-network__item">
+                                <a class="mob-network__link" href="https://www.facebook.com">
+                                    Facebook
+                            </a></li>
+                            <li class="mob-network__item">
+                                <a class="mob-network__link" href="https://www.linkedin.com">
+                                    Linkedin
+                            </a></li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
     <main>
-        <section class="type-work section">
-            <div class="container">
-                <h1 class="type-work__title" hidden>Види робіт</h1>
-                <ul class="type-work__list">
+        <section class="section">
+            <div class="container portfolio__container">
+                <ul class="type-work">
                     <li class="type-work__item">
-                        <button type="button" class="button type-work__button">Усі</button>
-                    </li>
-                    <li class="type-work__item">
-                        <button type="button" class="button type-work__button">Веб-сайти</button>
+                        <button type="button" class="type-work__button">Усі</button>
                     </li>
                     <li class="type-work__item">
-                        <button type="button" class="button type-work__button">Додатки</button>
+                        <button type="button" class="type-work__button">Веб-сайти</button>
                     </li>
                     <li class="type-work__item">
-                        <button type="button" class="button type-work__button">Дизайн</button>
+                        <button type="button" class="type-work__button">Додатки</button>
                     </li>
                     <li class="type-work__item">
-                        <button type="button" class="button type-work__button">Маркетинг</button>
+                        <button type="button" class="type-work__button">Дизайн</button>
                     </li>
-                </ul>
-                <ul class="type-work-photo__list">
+                    <li class="type-work__item">
+                        <button type="button" class="type-work__button">Маркетинг</button>
+                    </li>
+                </ul> 
+                <ul class="type-work-photo">
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/three-persons.jpg 1x, ./images/three-persons@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/three-persons-tablet.jpg    1x,
-                                        ./images/three-persons-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/three-persons-mobile.jpg    1x,
-                                        ./images/three-persons-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/three-persons.jpg"
-                                    alt="Три людини на фото"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/three-persons.jpg" alt="Три людини на фото" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/three-persons.jpg" alt="фотографії людей" width="370"> 
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Технокряк</h2>
-                                <p class="type-work-photo__subtitle">Веб-сайт</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Технокряк</h2>
+                                <p class="type-work-photo_subtitle">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/two-players.jpg 1x, ./images/two-players@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/two-players-tablet.jpg    1x,
-                                        ./images/two-players-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/two-players-mobile.jpg    1x,
-                                        ./images/two-players-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/two-players.jpg"
-                                    alt="Два баскетболіста"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/two-players.jpg" alt="Два баскетболіста" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/two-players.jpg" alt="грають в баскетбол" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Постер New Orlean vs Golden Star</h2>
-                                <p class="type-work-photo__subtitle">Дизайн</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Постер <span lang="en">New Orlean vs Golden Star</span> </h2>
+                                <p class="type-work-photo_subtitle">Дизайн</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/seafood-restaurant.jpg 1x, ./images/seafood-restaurant@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/seafood-restaurant-tablet.jpg    1x,
-                                        ./images/seafood-restaurant-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/seafood-restaurant-mobile.jpg    1x,
-                                        ./images/seafood-restaurant-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/seafood-restaurant.jpg"
-                                    alt="Риба на фоні"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/seafood-restaurant.jpg" alt="Риба на фоні" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/seafood-restaurant.jpg" alt="рибний ресторан" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Ресторан Seafood</h2>
-                                <p class="type-work-photo__subtitle">Додаток</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Ресторан <span lang="en">Seafood</span></h2>
+                                <p class="type-work-photo_subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/headphones.jpg 1x, ./images/headphones@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/headphones-tablet.jpg    1x,
-                                        ./images/headphones-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/headphones-mobile.jpg    1x,
-                                        ./images/headphones-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/headphones.jpg"
-                                    alt="Навушники"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/headphones.jpg" alt="Навушники" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/headphones.jpg" alt="навушники" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Проєкт Prime</h2>
-                                <p class="type-work-photo__subtitle">Маркетинг</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Проєкт <span lang="en">StarPrime</span></h2>
+                                <p class="type-work-photo_subtitle">Маркетинг</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/two-boxes.jpg 1x, ./images/two-boxes@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/two-boxes-tablet.jpg    1x,
-                                        ./images/two-boxes-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/two-boxes-mobile.jpg    1x,
-                                        ./images/two-boxes-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/two-boxes.jpg"
-                                    alt="Дві коробки"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/two-boxes.jpg" alt="Дві коробки" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/two-boxes.jpg" alt="упаковка" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Проєкт Boxes</h2>
-                                <p class="type-work-photo__subtitle">Додаток</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Проєкт <span lang="en">Boxes</span></h2>
+                                <p class="type-work-photo_subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/computer-screen.jpg 1x, ./images/computer-screen@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/computer-screen-tablet.jpg    1x,
-                                        ./images/computer-screen-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/computer-screen-mobile.jpg    1x,
-                                        ./images/computer-screen-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/computer-screen.jpg"
-                                    alt="Екран комп'ютера"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/computer-screen.jpg" alt="Екран комп'ютера" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/computer-screen.jpg" alt="монітор" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title" lang="en">Inspiration has no Borders</h2>
-                                <p class="type-work-photo__subtitle">Веб-сайт</p>
+                            <div class="type-work-photo__box">
+                                <h2 lang="en" class="type-work-photo_title">Inspiration has no Borders</h2>
+                                <p class="type-work-photo_subtitle">Веб-сайт</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/magazine.jpg 1x, ./images/magazine@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/magazine-tablet.jpg    1x,
-                                        ./images/magazine-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/magazine-mobile.jpg    1x,
-                                        ./images/magazine-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/magazine.jpg"
-                                    alt="Журнал"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/magazine.jpg" alt="Журнал" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/magazine.jpg" alt="журнал" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Видання Limited Edition</h2>
-                                <p class="type-work-photo__subtitle">Дизайн</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Видання <span lang="en">Limited Edition</span></h2>
+                                <p class="type-work-photo_subtitle">Дизайн</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/lab-tablet.jpg    1x,
-                                        ./images/lab-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/lab-mobile.jpg    1x,
-                                        ./images/lab-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/lab.jpg"
-                                    alt="Ярлик"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/lab.jpg" alt="Ярлик" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/lab.jpg" alt="ярлик" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title">Проєкт LAB</h2>
-                                <p class="type-work-photo__subtitle">Маркетинг</p>
+                            <div class="type-work-photo__box">
+                                <h2 class="type-work-photo_title">Проєкт <span lang="en">LAB</span></h2>
+                                <p class="type-work-photo_subtitle">Маркетинг</p>
                             </div>
                         </a>
                     </li>
                     <li class="type-work-photo__item">
-                        <a class="type-work-photo__link link" href="#">
+                        <a class="type-work-photo__link" href="#">
                             <div class="type-work-photo__wrap">
-                                <picture>
-                                    <source
-                                    srcset="./images/smth-typing.jpg 1x, ./images/smth-typing@2x.jpg 2x"
-                                    media="(min-width: 1200px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/smth-typing-tablet.jpg    1x,
-                                        ./images/smth-typing-tablet@2x.jpg 2x
-                                    "
-                                    media="(min-width: 768px)"
-                                    />
-                                    <source
-                                    srcset="
-                                        ./images/smth-typing-mobile.jpg    1x,
-                                        ./images/smth-typing-mobile@2x.jpg 2x
-                                    "
-                                    media="(max-width: 767px)"
-                                    />
-                                    <img
-                                    class="portfolio-cards__image image-block"
-                                    src="./images/smth-typing.jpg"
-                                    alt="Чоловік щось друкує"
-                                    />
-                                </picture>
-                                <!-- <img src="./images/smth-typing.jpg" alt="Чоловік щось друкує" width="370"> -->
-                                <p class="type-work-photo__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                <img src="./images/smth-typing.jpg" alt="сторінка на екрані ноутбука" width="370">
+                                <p class="type-work-photo__text">
+                                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
                             </div>
-                            <div class="type-work__container">
-                                <h2 class="type-work-photo__title" lang="en">Growing Business</h2>
-                                <p class="type-work-photo__subtitle">Додаток</p>
+                            <div class="type-work-photo__box">
+                                <h2 lang="en" class="type-work-photo_title">Growing Business</h2>
+                                <p class="type-work-photo_subtitle">Додаток</p>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section>        
     </main>
-
     <footer class="footer">
-        <div class="footer__container container">
-            <div class="footer__contacts contacts">
-                <a href="#" class="logo"><span class="logo-web">Web</span>Studio</a>
-                <address class="address">
-                    <ul class="address__list">
-                        <li class="address__item-address address__item">
-                            <a href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                                target="_blank" rel="noreferrer noopener" class="link">м. Київ, пр-т Лесі Українки, 26</a>
-                        </li>
-                        <li class="address__item-contact address__item">
-                            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-                        </li>
-                        <li class="address__item-contact address__item">
-                            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
-            <div class="footer__join join">
-                <p class="join__title">приєднуйтесь</p>
-                <ul class="join__list">
-                    <li class="join__item">
-                        <a class="join__link link" href="#">
-                            <svg class="join__icon" width="20" height="20">
+        <div class="container">
+            <div class="footer__band">
+                <div class="footer__cover">
+                    <div class="footer__logo-adress">
+                        <div class="footer__logo">
+                            <a href="./index.html" lang="en" class="logo__link">Web<span class="logo__footer">Studio</span></a>
+                        </div>
+                        <div class="footer-contact">
+                            <address class="footer-contact__adress">
+                                <a href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                                target="_blank" rel="noreferrer noopener" class="address__link">м. Київ, пр-т Лесі Українки, 26</a>
+                            </address>
+                            <ul class="footer-contact__list">
+                                <li class="footer-contact__item"><a href="mailto:info@devstudio.com" class="footer-contact__link">info@devstudio.com</a></li>
+                                <li class="footer-contact__item"><a href="tel:+380961111111" class="footer-contact__link">+38 096 111 11 11</a> </li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="footer-network">
+                        <p class="footer-title">приєднуйтесь</p>
+                        <ul class="footer-network__list">
+                            <li class="footer-network__item">
+                                <a class="footer-network__link" href="https://www.instagram.com">
+                                <svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link link" href="#">
-                            <svg class="join__icon" width="20" height="20">
+                                </svg>
+                            </a></li>
+                            <li class="footer-network__item">
+                                <a class="footer-network__link" href="https://twitter.com">
+                                <svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link link" href="#">
-                            <svg class="join__icon" width="20" height="20">
+                                </svg>
+                            </a></li>
+                            <li class="footer-network__item">
+                                <a class="footer-network__link" href="https://www.facebook.com">
+                                <svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="join__item">
-                        <a class="join__link link" href="#">
-                            <svg class="join__icon" width="20" height="20">
+                                </svg>
+                            </a></li>
+                            <li class="footer-network__item">
+                                <a class="footer-network__link" href="https://www.linkedin.com">
+                                <svg class="footer-network__icon" width="20px" height="20px">
                                 <use href="./images/icons.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                                </svg>
+                            </a></li>
+                        </ul>     
+                    </div>                    
             </div>
-            <div class="footer__subscribe subscribe">
-                <p class="subscribe__title">Підпишіться на розсилку</p>
-                <form action="subscribe" class="subscribe__form">
-                    <label for="subscribe-email" class="subscribe__lable"></label>
-                    <input 
-                    type="email" 
-                    name="subscribe-email"
-                    id="subscribe-email"
-                    class="subscribe__input"
-                    placeholder="E-mail"
-                    required>
-                    <button class="subscribe__button button" type="submit">Підписатися
-                        <svg class="subscribe__icon" width="24" height="24">
+            <div class="footer-distribution">
+                <p class="footer-title">Підпишіться на розсилку</p>
+                <form class="mailing">
+                    <label for="mailing" class="mailing__label"></label>
+                    <div class="mailing__box">
+                        <input 
+                        type="email"
+                        name="mailing" 
+                        class="mailing__input" 
+                        placeholder="E-mail"
+                        id="mailing"
+                        required>
+                    </div>
+                    <button type="submit" class="mailing__button btn">
+                    Підписатися
+                        <svg class="mailing__icon" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
             </div>
+            </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    
+    
+
+
 </body>
 </html>

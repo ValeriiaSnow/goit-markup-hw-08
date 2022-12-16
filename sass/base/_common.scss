@@ -1,8 +1,11 @@
 body {
-    color: var(--text-color);
-    font-family: Roboto, sans-serif;
+    background: var(--primary-color);
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.03em;
-    font-style: 400;
+    color: var(--text-color );
 }
 
 button{
@@ -11,8 +14,4 @@ button{
 
 address{
     font-style: normal;
-}
-
-img{
-    display: block;
 }

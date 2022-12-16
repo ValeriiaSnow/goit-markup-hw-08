@@ -193,6 +193,23 @@ img {
   position: relative;
 }
 
+.header__button {
+  background-color: transparent;
+  display: inline-flex;
+}
+
+.header__button .icon-close {
+  display: none;
+}
+
+.header__button.is-open .icon-close {
+  display: block;
+}
+
+.header__button.is-open .icon-menu {
+  display: none;
+}
+
 .hero {
   font-weight: 900;
   font-size: 44px;
@@ -914,7 +931,7 @@ where 60px = 2(amount of margins = n-1) * 30px(margins)
 
 .subscribe__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  type-work: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
   width: 295px;

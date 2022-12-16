@@ -1,70 +1,78 @@
-.team__title {
-    @include basic(700, 36px, 1.17, center, 0.03em);
-    color: var(--title-color);
-}
-
-.team {
+.section.team {
     background-color: #F5F4FA;
 }
 
 .team__list{
-    margin-top: 50px;
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;    
 }
 
-.team__item {
-    background-color: var(--clear-white);
+.team__item{
+    display: block; 
+    line-height: calc(19/16);
+    text-align: center;
+    background-color: var(--primary-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    width: 270px;
+    width: 100%;
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        width: calc((100% - 30px)/2);
+    }
+    @media screen and (min-width:1200px) {
+        max-width: calc((100% - 90px)/4);
+    }
 }
 
-.name{
-    padding-top: 30px;
-    padding-bottom: 30px;
+.team__uptitle {
+    padding: 30px;
 }
 
-.name__subtitle{
-    @include basic(400, 16px, 1.19, center, 0.03em);
-}
-
-.name__title {
-    @include basic(500, 16px, 1.19, center, 0.03em);
+.team__name{
+    margin-bottom: 10px;
+    font-size: 16px; 
+    font-weight: 500;
     color: var(--title-color);
 }
 
-/* social media */
-.name__list{
+.team__category{
+    font-size: 16px;
+    margin: 16px;
+}
+
+.team-network{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 16px;
+    gap: 10px;  
 }
 
-.name__item{
+.team-network__item{
     width: 44px;
-    height: 44px;
+    height: 44px;  
 }
 
-.name__link{
+.team-network__link{
     width: 100%;
     height: 100%;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFFFFF;
-    transition: background-color 250ms var(--type-of-show);
-    &:hover, &:focus{
-        background-color: #2196F3;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+    background-color: var(--accent-color);
     }
 }
 
-.name__icon{
-    fill: #AFB1B8;
-    transition: fill 250ms var(--type-of-show);
-    .name__link:hover &, .name__link:focus &{
-        fill: #FFFFFF;
-    } 
+.team-network__icon{
+    fill: var(--icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .team-network__link:hover &,
+    .team-network__link:focus &{
+    fill: var(--primary-color);
+    }
 }

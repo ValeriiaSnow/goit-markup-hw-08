@@ -1,21 +1,22 @@
-@import './utils/hide';
-@import './base/reset';
-@import './base/common';
 @import './utils/vars';
+@import './utils/hide';
+
+@import './base/common';
+@import './base/reset';
+
+@import './components/logo';
 @import './components/container';
 @import './components/section';
+@import './components/link';
 
 @import './layouts/header';
-
 @import './layouts/hero';
-@import './layouts/quality';
-@import './layouts/whatdo';
+@import './layouts/benefits';
+@import './layouts/work';
 @import './layouts/team';
 @import './layouts/clients';
-
 @import './layouts/typeworklist';
 @import './layouts/typeworkphoto';
-
-@import './layouts/modal';
-
 @import './layouts/footer';
+
+@import './components/modal';
